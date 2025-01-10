@@ -1,0 +1,27 @@
+CHG0049779
+
+mi
+ingress is there or nt
+kured also 
+
+
+helm install kured kubereboot/kured -n kured
+
+helm install kured kubereboot/kured --namespace kured \
+    --set tolerations[0].effect=NoSchedule --set tolerations[0].key=node-role.kubernetes.io/agent \
+    --set tolerations[1].operator=Exists --set tolerations[1].key=CriticalAddonsOnly \
+    --set tolerations[2].operator=Exists --set tolerations[2].effect=NoExecute \
+    --set tolerations[3].operator=Exists \
+    --set tolerations[3].effect=NoSchedule
+
+
+Azure RD - between regions 
+witinin region 
+load balancer - diff availability 
+infra str HA not required 
+configuration backup 
+backup and restree
+how to modify configuration an 
+iinfra level support and not wit appln ( power on or replica)
+
+kured patching 

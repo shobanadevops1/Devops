@@ -1,0 +1,63 @@
+az acr unipercontainerregistry update \
+    --name unipercontainerregistry --image aag:130379 \
+    --delete-enabled true --write-enabled true
+
+Next Sprint planning:
+_____________________
+
+1.Additioanl AKS clusters
+2.
+5
+4
+
+az acr unipercontainerregistry update \
+    --name unipercontainerregistry --image aag:130378 \
+    --delete-enabled true --write-enabled true
+
+kubectl rollout restart deployment grafana -n <namespace>
+
+one cluster
+how appln is going 
+how they want to use it (
+prometheus can be set uo as master slave , instead of a k8 server with diff namespace ,each namespaces ca allocate a quota so that they cannot over breach 
+Appln team wants 
+2 ways 
+replicate the exisitng system we can have one prometheus --> diff ns -->
+one prometheus 
+disucssion with carsten :
+
+user approval --> sebastain
+
+
+process to use prometheus --> req is snow --> configure on own --> prometheus endpoints .
+
+separate cluster --> master / slave 
+thie own k8 cluster , same cluster 
+
+more than one 
+
+
+
+1.promrtheus is authentocated 
+2.concept usage -->based on roles 
+how can an appln (own grafana or shared ) is used 
+what are the roles they get , how do they get it , responsibility ,(how they order , where they supposed to run eithr in own or cluster)
+role defied to developers .
+
+concept 
+multi cluster scenario
+multi node cluster -->
+
+where dashboards 
+1 prometheus 
+
+grafana 
+other cluster -->prometheus chk 
+prometheus --> master /slave
+
+can different URL prometheus can support 
+
+
+
+
+

@@ -1,0 +1,18 @@
+RPUnPjD08qkqg7RZeOuN3vLr75jUf9l40qG7A4J4
+
+helm upgrade grafana grafana/grafana --values /tmp/grafana.values --set smtp.enabled=true --set smtp.host=10.104.128.127 --namespace prometheus
+
+kubectl -n prometheus expose pod prometheus-grafana-67f8fd4dcd-6c5dd --type Loadbalancer --name prometheus-server-lb --dry-run=client -o yaml > prometheusservice.yaml
+
+helm install grafana grafana -n monitoring
+
+
+
+helm install prometheus prometheus-community/prometheus --namespace monitoring
+
+kubectl -n monitoring expose pod prometheus-server-bf4f4cd78-bcmrv --type Loadbalancer --name prometheus-server-lb 
+
+kubectl get secret --namespace prometheus grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo -->
+
+load balancer -->public ip address
+

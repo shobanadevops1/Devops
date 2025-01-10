@@ -1,0 +1,45 @@
+Docker is a suite of software development tools for creating, sharing and running individual containers; 
+Kubernetes is a system for operating containerized applications at scale.
+
+How do I connect master and worker node in Kubernetes?
+kubeadm command is used 
+
+Namespaces are a way to organize clusters into virtual sub-clusters 
+
+to create namespcae kubectl 
+
+Ns are Kubernetes objects which partition a single Kubernetes cluster into multiple virtual clusters
+
+set the namespace --kubectl the --namespace flag.
+
+cmd to create POD:
+kubectl run nginx --image=nginx --restart=Never 
+
+
+kubectl set-config command and specify the name of the namespace want to be used as default.
+
+
+kubectl is the command-line interface (CLI) tool for working with a Kubernetes cluster. 
+Kubelet is the technology that applies, creates, updates, and destroys containers on a Kubernetes node.
+
+
+https://www.vmware.com/topics/glossary/content/kubernetes-services.html
+
+services in k8
+
+ClusterIP. Exposes a service which is only accessible from within the cluster.
+NodePort. Exposes a service via a static port on each node’s IP.
+LoadBalancer. Exposes the service via the cloud provider’s load balancer.
+ExternalName. Maps a service to a predefined externalName field by returning a value for the CNAME record.
+
+collection admministratro
+basic - payable 
+stakeholder - free
+
+
+To create a namespace, use kubectl create command.
+Syntax: kubectl create namespace.
+Example: kubectl create namespace aznamespace.
+Syntax: kubectl run --image= --port= --generator=run-pod/v1 -n.
+Example: kubectl run ns-pod --image=nginx --port=80 --generator=run-pod/v1 -n aznamespace.
+Syntax: kubecl get pods --namespace.
