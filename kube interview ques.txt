@@ -1,0 +1,136 @@
+local-exex
+x`x`
+
+pod
+deploymnt file + configuration 
+fibonaci series
+issur ci/cd 
+pull req 
+deploymnt procedue
+pod entire cycle
+readiness pod 
+
+basic docker file
+
+files needed for deplo
+Depfile
+service file 
+1ingress
+
+
+
+reference - WIKI page 
+hours -remove
+start date an
+
+2 Release mgmt profile 
+
+subbiah
+hemanth kumar 
+16
+Terraform:
+	
+2.metadata &contianer
+3. 4
+5.b
+6.Random_id
+7.1
+8.b
+9.
+11.4
+13.host netwrk
+14.1
+15.1
+16.correct(tpl rechk)
+17.c
+18.1
+19.cor
+20.1
+21.1
+22.corre
+23.corr
+24.chk
+25.connrecr
+26.
+31.
+
+9597043519
+
+ https://kubernetesbyexample.com/ 
+
+2) https://www.devopscube.com/ 
+
+3) https://www.devopscube.com/get-free-digital-ocean-credits/ 
+
+4) https://www.devopscube.com/setup-prometheus-monitoring-on-kubernetes/ 
+
+5) https://www.kubernetesbyexample.com/en/learning-paths/kubernetes-fundamentals/what-pod 
+
+6) https://labs.play-with-k8s.com/ 
+
+7) https://killer.sh/login  --Susa1180
+
+8) https://roadmap.sh/devops 
+
+https://sso.teachable.com/secure/142820/identity/login/password?wizard_id=YM21-2kujhC2kCiiUMr3gHc_vzJweV3r5gi7n9MmQC_0WxjH84DeXK0gir2woFoKSkmbUYoq18jjeNnnSo4FSQ
+
+https://kodekloud.com/courses/labs-certified-kubernetes-administrator-with-practice-tests/
+---------------------------------------------------------------------------------------------------
+june 12:
+********
+
+k8 use- lifecycle maintain pannalam (scale up and manage network , upgrade pods with no dowmtime ).
+objects in k8 -api sercer , etcd , scheduler controller , kubelet
+
+pod -->inside --.container 
+
+Ci/cd 
+container registry create pannaunum (customizes images , Azure containeer registry)
+build artifat steps
+Cd - deploy the image to registry .
+
+autoscale:
+during cluster creation we need to select 
+default node -
+
+deployment strategies:
+
+POD scaling
+
+HPA auto scaler
+POD disrutpbudget
+
+two types:
+
+list of name space
+default – the default namespace for objects with no other namespace
+kube system – the namespace for objects created by kubesystem
+kube public – this namespace created automatically and readable by all users .it contains information like CA,that helps kubeadm join and authenticate workernodes
+kube-node-lease – namespace contains lease objects that are used by kubelet to determine node health
+
+Understanding authentication 
+Kubernetes cluster have two categories of users
+Normal users
+Service accounts
+Service account allows pod to interact with api server
+Let understand the use case
+
+Other way is to goto logs under monitoring azure log analytics
+How to connect application logs for debugging:
+Connect to cluster  wokfloadspodsgoto live logs 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

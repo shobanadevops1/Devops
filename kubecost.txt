@@ -1,0 +1,8 @@
+apiVersion: v1kind: PersistentVolumeClaimmetadata:
+  name: task-pv-claimspec:  storageClassName: manual  accessModes:    - ReadWriteOnce  resources:    requests:      storage: 3Gi
+
+https://github.com/kubecost/cost-analyzer-helm-chart/blob/beb868a46a35c85a5a753312116127fcd14da82d/cost-analyzer/values.yaml#L3-L5
+kubectl port-forward --namespace kubecost deployment/kubecost-cost-analyzer 9090&
+https://github.com/kubecost/cost-analyzer-helm-chart/blob/master/cost-analyzer/values.yaml
+settings :diagnostics -->Prometheus tag willbe displayed 
+bug of diagnostics(2 button  of page)

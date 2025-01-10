@@ -1,0 +1,29 @@
+helm install prometheus
+helm repo update
+nginx install 
+helm install prometheus prometheus-community/prometheus --namespace monitoring
+
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+
+kubectl create secret tls prometheus-tls --key $(System.DefaultWorkingDirectory)/_Prometheuskubedemo/drop/prometheus-poc.key --cert $(System.DefaultWorkingDirectory)/_Prometheuskubedemo/drop/prometheus-poc_azure_uniper_energy.crt -n monitoring
+
+1.helm install kubecost
+helm repo add kubecost https://kubecost.github.io/cost-analyzer/
+helm install kubecost kubecost/cost-analyzer --namespace kubecost
+
+2.helm node exporter disable
+helm upgrade --install kubecost \
+  --repo https://kubecost.github.io/cost-analyzer/ cost-analyzer \
+  --namespace kubecost --create-namespace \
+  --set prometheus.nodeExporter.enabled=false \
+  --set prometheus.serviceAccounts.nodeExporter.create=false \
+  --set prometheus.kubeStateMetrics.enabled=false
+
+3.using the existing prometheus
+helm upgrade --install kubecost \
+  --repo https://kubecost.github.io/cost-analyzer/ cost-analyzer \
+  --namespace kubecost --create-namespace \
+  --set global.prometheus.fqdn=http://prometheus-server.monitoring.svc \
+  --set global.prometheus.enabled=false \
+  --set --reuse-values \
+  -f $(System.DefaultWorkingDirectory)/_Prometheuskubedemo/drop/extrascrapeconfig.yaml
