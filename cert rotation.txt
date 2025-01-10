@@ -1,0 +1,87 @@
+certificate rotate:
+_______________________
+
+1.certificate are stored in keyvalut
+2.PFX files shld be updated in keyvalut ( comes with created date )
+3.convert PFX files to cert and key file .(bcos in AKS we use .cert and .key)
+4.from the keyvalut we need to download PFX files 
+5.we need to create old secret value and create new one
+
+1.download PFX files .
+2.then convert it to secret and key file 
+3.delete the old secret value and create new one .
+4.we shld configure a cron job to run everyday (option only to upload pfx files)
+
+-------------------------------
+PFX files to keuvalut 
+is there any option to create crt and key files 
+
+CertBase64 = Get-AzKeyVaultSecret -VaultName "oct2022" -Name "mycert123" -AsPlainText
+$CertBytes = [Convert]::FromBase64String($CertBase64)
+Set-Content -Path cert.pfx -Value $CertBytes -AsByteStream 
+-------------------------------------------------------------------------------------------------------------------
+
+Get-AzKeyVaultCertificate -VaultName "oct2022" -Name "mycert123" 
+$CertBase64 = Get-AzKeyVaultSecret -VaultName "oct2022" -Name "mycert123" -AsPlainText
+$CertBytes = [Convert]::FromBase64String($CertBase64)
+Set-Content -Path cert.pfx -Value $CertBytes -AsByteStream
+
+87UXA6
+
+Points to be considered :
+_________________________
+
+2.Management of certificate (one central key valut or who is responsible for renewal and owner for the same )
+2central or separate key vault is needed .
+3.RBAC of certificat erenewal 
+4.analysis of alternate options .
+5.discuss with security team on the process and procedure .
+6.Application -> manage -> stored the certificate (somtimes keyvault /local drive /)
+we need to come with a plan to streamline process .
+7.impact 
+
+affinity assigns to pod level 
+taint assign to node level 
+
+
+
+
+az aks enable-addons \
+  --resource-group cmcaks-paas-poc-rgp-001 \
+  --name cmcaks-poc-001 \
+  --addons open-service-mesh
+
+cloud-shell-storage-centralindia
+
+
+
+az aks enable-addons \
+  --resource-group cluster \
+  --name cluster \
+  --addons open-service-mesh
+
+InsightsMetrics
+| where Name contains "envoy"
+| extend t=parse_json(Tags)
+| where t.app == "cluster"
+
+https://wiki.intranet.uniper.energy/sales/display/CF/A+Guide+to+use+Prometheus
+
+https://kubecost-dev-hisec.azure.uniper.energy/ - cmsaks-pre-hisec001
+
+https://aks-grafana-dev.uniperapps.com/ - cmcaks-pre-001
+
+
+
+-----------------------------------------------------------
+
+helm upgrade -i --create-namespace kubecost kubecost/cost-analyzer --namespace kubecost --set kubecostToken="aGVsbUBrdWJlY29zdC5jb20=xm343yadf98" --values values_pre.yaml
+
+
+
+
+
+
+
+
+
