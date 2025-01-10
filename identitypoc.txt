@@ -1,0 +1,318 @@
+s01416 [ ~ ]$ az aks show -g cmcaks-paas-poc-rgp-001 -n cmcaks-poc-001
+{
+  "aadProfile": {
+    "adminGroupObjectIDs": [
+      "55a16f7a-c144-4d36-a9ff-3540b32641d0"
+    ],
+    "adminUsers": null,
+    "clientAppId": null,
+    "enableAzureRbac": false,
+    "managed": true,
+    "serverAppId": null,
+    "serverAppSecret": null,
+    "tenantId": "db8e2f82-8a37-4c09-b7de-ed06547b5a20"
+  },
+  "addonProfiles": {
+    "azureKeyvaultSecretsProvider": {
+      "config": null,
+      "enabled": true,
+      "identity": {
+        "clientId": "b00ab700-a36c-40e5-b5a9-618118709810",
+        "objectId": "0be79845-962d-44b5-8ec1-7ed005c590e2",
+        "resourceId": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourcegroups/MC_cmcaks-paas-poc-rgp-001_cmcaks-poc-001_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/azurekeyvaultsecretsprovider-cmcaks-poc-001"
+      }
+    },
+    "azurepolicy": {
+      "config": null,
+      "enabled": true,
+      "identity": {
+        "clientId": "3ef60d6e-692a-441b-a613-ef4ec536ea98",
+        "objectId": "db406635-5712-4894-aa4b-bf247ec8c70a",
+        "resourceId": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourcegroups/MC_cmcaks-paas-poc-rgp-001_cmcaks-poc-001_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/azurepolicy-cmcaks-poc-001"
+      }
+    },
+    "omsagent": {
+      "config": {
+        "logAnalyticsWorkspaceResourceID": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourcegroups/defaultresourcegroup-weu/providers/microsoft.operationalinsights/workspaces/defaultworkspace-d4665e52-c01b-4bdf-aa11-3da2eac23394-weu"
+      },
+      "enabled": true,
+      "identity": {
+        "clientId": "f1fb1688-85f6-4d4f-8ec6-440ed783a6fc",
+        "objectId": "d2a9b72b-ec38-4e60-9ada-3a031f0aab68",
+        "resourceId": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourcegroups/MC_cmcaks-paas-poc-rgp-001_cmcaks-poc-001_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/omsagent-cmcaks-poc-001"
+      }
+    },
+    "openServiceMesh": {
+      "config": null,
+      "enabled": true,
+      "identity": null
+    }
+  },
+  "agentPoolProfiles": [
+    {
+      "availabilityZones": null,
+      "count": 1,
+      "creationData": null,
+      "currentOrchestratorVersion": "1.24.6",
+      "enableAutoScaling": true,
+      "enableEncryptionAtHost": null,
+      "enableFips": false,
+      "enableNodePublicIp": false,
+      "enableUltraSsd": null,
+      "gpuInstanceProfile": null,
+      "hostGroupId": null,
+      "kubeletConfig": null,
+      "kubeletDiskType": "OS",
+      "linuxOsConfig": null,
+      "maxCount": 5,
+      "maxPods": 110,
+      "minCount": 1,
+      "mode": "User",
+      "name": "nodepool",
+      "nodeImageVersion": "AKSUbuntu-1804gen2containerd-2022.12.06",
+      "nodeLabels": null,
+      "nodePublicIpPrefixId": null,
+      "nodeTaints": null,
+      "orchestratorVersion": "1.24.6",
+      "osDiskSizeGb": 128,
+      "osDiskType": "Managed",
+      "osSku": "Ubuntu",
+      "osType": "Linux",
+      "podSubnetId": null,
+      "powerState": {
+        "code": "Running"
+      },
+      "provisioningState": "Succeeded",
+      "proximityPlacementGroupId": null,
+      "scaleDownMode": "Delete",
+      "scaleSetEvictionPolicy": null,
+      "scaleSetPriority": null,
+      "spotMaxPrice": null,
+      "tags": null,
+      "type": "VirtualMachineScaleSets",
+      "upgradeSettings": {
+        "maxSurge": null
+      },
+      "vmSize": "Standard_D2s_v3",
+      "vnetSubnetId": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourceGroups/netwk-IaaS-POC-rgp-001/providers/Microsoft.Network/virtualNetworks/publc-poc2-vnet-001/subnets/publc-poc2-snet-aks-kubenet-001",
+      "workloadRuntime": null
+    },
+    {
+      "availabilityZones": [
+        "1",
+        "2",
+        "3"
+      ],
+      "count": 2,
+      "creationData": null,
+      "currentOrchestratorVersion": "1.24.6",
+      "enableAutoScaling": true,
+      "enableEncryptionAtHost": false,
+      "enableFips": false,
+      "enableNodePublicIp": false,
+      "enableUltraSsd": false,
+      "gpuInstanceProfile": null,
+      "hostGroupId": null,
+      "kubeletConfig": null,
+      "kubeletDiskType": "OS",
+      "linuxOsConfig": null,
+      "maxCount": 5,
+      "maxPods": 110,
+      "minCount": 2,
+      "mode": "System",
+      "name": "systempool",
+      "nodeImageVersion": "AKSUbuntu-1804gen2containerd-2022.12.06",
+      "nodeLabels": {
+        "app": "system-apps",
+        "nodepool-type": "system",
+        "nodepoolos": "linux"
+      },
+      "nodePublicIpPrefixId": null,
+      "nodeTaints": null,
+      "orchestratorVersion": "1.24.6",
+      "osDiskSizeGb": 128,
+      "osDiskType": "Managed",
+      "osSku": "Ubuntu",
+      "osType": "Linux",
+      "podSubnetId": null,
+      "powerState": {
+        "code": "Running"
+      },
+      "provisioningState": "Succeeded",
+      "proximityPlacementGroupId": null,
+      "scaleDownMode": null,
+      "scaleSetEvictionPolicy": null,
+      "scaleSetPriority": null,
+      "spotMaxPrice": null,
+      "tags": {
+        "app": "system-apps",
+        "nodepool-type": "system",
+        "nodepoolos": "linux"
+      },
+      "type": "VirtualMachineScaleSets",
+      "upgradeSettings": {
+        "maxSurge": null
+      },
+      "vmSize": "Standard_DS2_v2",
+      "vnetSubnetId": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourceGroups/netwk-IaaS-POC-rgp-001/providers/Microsoft.Network/virtualNetworks/publc-poc2-vnet-001/subnets/publc-poc2-snet-aks-kubenet-001",
+      "workloadRuntime": null
+    }
+  ],
+  "apiServerAccessProfile": null,
+  "autoScalerProfile": {
+    "balanceSimilarNodeGroups": "false",
+    "expander": "random",
+    "maxEmptyBulkDelete": "10",
+    "maxGracefulTerminationSec": "600",
+    "maxNodeProvisionTime": "15m",
+    "maxTotalUnreadyPercentage": "45",
+    "newPodScaleUpDelay": "0s",
+    "okTotalUnreadyCount": "3",
+    "scaleDownDelayAfterAdd": "10m",
+    "scaleDownDelayAfterDelete": "10s",
+    "scaleDownDelayAfterFailure": "3m",
+    "scaleDownUnneededTime": "10m",
+    "scaleDownUnreadyTime": "20m",
+    "scaleDownUtilizationThreshold": "0.5",
+    "scanInterval": "10s",
+    "skipNodesWithLocalStorage": "false",
+    "skipNodesWithSystemPods": "true"
+  },
+  "autoUpgradeProfile": null,
+  "azurePortalFqdn": "cmcaks-poc-cmcaks-paas-poc--d4665e-a3f94aff.portal.hcp.westeurope.azmk8s.io",
+  "currentKubernetesVersion": "1.24.6",
+  "disableLocalAccounts": false,
+  "diskEncryptionSetId": null,
+  "dnsPrefix": "cmcaks-poc-cmcaks-paas-poc--d4665e",
+  "enablePodSecurityPolicy": null,
+  "enableRbac": true,
+  "extendedLocation": null,
+  "fqdn": "cmcaks-poc-cmcaks-paas-poc--d4665e-a3f94aff.hcp.westeurope.azmk8s.io",
+  "fqdnSubdomain": null,
+  "httpProxyConfig": null,
+  "id": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourcegroups/cmcaks-paas-poc-rgp-001/providers/Microsoft.ContainerService/managedClusters/cmcaks-poc-001",
+  "identity": {
+    "principalId": null,
+    "tenantId": null,
+    "type": "UserAssigned",
+    "userAssignedIdentities": {
+      "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourcegroups/cmcaks-paas-poc-rgp-001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/manage-identity-poc-001": {
+        "clientId": "ed5b6e16-de33-4aa5-8dd4-42700ae1f816",
+        "principalId": "cdf5bb10-3a4d-4f9f-b094-3694d0e3f07c"
+      }
+    }
+  },
+  "identityProfile": {
+    "kubeletidentity": {
+      "clientId": "328822a9-fddb-4a3d-94be-96a6413e42f6",
+      "objectId": "442172c8-257b-4d9c-978c-1b2a04300e95",
+      "resourceId": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourcegroups/MC_cmcaks-paas-poc-rgp-001_cmcaks-poc-001_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/cmcaks-poc-001-agentpool"
+    }
+  },
+  "kubernetesVersion": "1.24.6",
+  "linuxProfile": {
+    "adminUsername": "azureuser",
+    "ssh": {
+      "publicKeys": [
+        {
+          "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5AILCqiTytlq8GQz9ppYoV/d7VRC2QcLJrXchOH41CIv/AfuLjJ/w4F//o2RtLO8gPSlMFIemeIgTiNVzyvLBROb5hTjVI+HyfUPEAElozJzFMrSHhhkRuYVyVJBSfAa7JcT9xXkH7DWGXQVCjwhIlOfTWUuHrcLf+1jgPZxlXVLuvv7qFo8t1zNvIW3hPwcHqsyF5hpf+M2DXYPo/33O0j+q7FwzdO/QABiD3p/YCbmrJ6TIfcni2eRiiRsto9Ij9XhssRsCNsn3VmVwK2Wy1hI9cNNa9YJhUc8PugqKmjv4VlZCS7w+2eVBdZVVe0WdlNWJ7Im9gknKgP7LBOmb"
+        }
+      ]
+    }
+  },
+  "location": "westeurope",
+  "maxAgentPools": 100,
+  "name": "cmcaks-poc-001",
+  "networkProfile": {
+    "dnsServiceIp": "10.0.0.10",
+    "dockerBridgeCidr": "172.17.0.1/16",
+    "ipFamilies": [
+      "IPv4"
+    ],
+    "loadBalancerProfile": {
+      "allocatedOutboundPorts": null,
+      "effectiveOutboundIPs": [
+        {
+          "id": "/subscriptions/d4665e52-c01b-4bdf-aa11-3da2eac23394/resourceGroups/MC_cmcaks-paas-poc-rgp-001_cmcaks-poc-001_westeurope/providers/Microsoft.Network/publicIPAddresses/14a16a4c-474c-4fb6-b768-0364c37c5db2",
+          "resourceGroup": "MC_cmcaks-paas-poc-rgp-001_cmcaks-poc-001_westeurope"
+        }
+      ],
+      "enableMultipleStandardLoadBalancers": null,
+      "idleTimeoutInMinutes": null,
+      "managedOutboundIPs": {
+        "count": 1,
+        "countIpv6": null
+      },
+      "outboundIPs": null,
+      "outboundIpPrefixes": null
+    },
+    "loadBalancerSku": "Standard",
+    "natGatewayProfile": null,
+    "networkMode": null,
+    "networkPlugin": "kubenet",
+    "networkPolicy": "calico",
+    "outboundType": "loadBalancer",
+    "podCidr": "10.244.0.0/16",
+    "podCidrs": [
+      "10.244.0.0/16"
+    ],
+    "serviceCidr": "10.0.0.0/16",
+    "serviceCidrs": [
+      "10.0.0.0/16"
+    ]
+  },
+  "nodeResourceGroup": "MC_cmcaks-paas-poc-rgp-001_cmcaks-poc-001_westeurope",
+  "oidcIssuerProfile": {
+    "enabled": false,
+    "issuerUrl": null
+  },
+  "podIdentityProfile": null,
+  "powerState": {
+    "code": "Running"
+  },
+  "privateFqdn": null,
+  "privateLinkResources": null,
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": null,
+  "resourceGroup": "cmcaks-paas-poc-rgp-001",
+  "securityProfile": {
+    "azureKeyVaultKms": null,
+    "defender": {
+      "logAnalyticsWorkspaceResourceId": "/subscriptions/3f63aec6-3eb8-41a5-8343-803ff18e9fb7/resourcegroups/logs-iaas-hub-rgp-001/providers/microsoft.operationalinsights/workspaces/clusdfndrlogs-uni-oms-001",
+      "securityMonitoring": {
+        "enabled": true
+      }
+    }
+  },
+  "servicePrincipalProfile": {
+    "clientId": "msi"
+  },
+  "sku": {
+    "name": "Basic",
+    "tier": "Free"
+  },
+  "storageProfile": {
+    "blobCsiDriver": null,
+    "diskCsiDriver": {
+      "enabled": true
+    },
+    "fileCsiDriver": {
+      "enabled": true
+    },
+    "snapshotController": {
+      "enabled": true
+    }
+  },
+  "systemData": null,
+  "tags": {
+    "application_name": "cloudworks managed containers",
+    "availability": "na",
+    "bu_id": "1533",
+    "confidentiality": "na",
+    "eam_id": "bsn0003630",
+    "environment": "poc",
+    "integrity": "na",
+    "owner_email": "carsten.schmitz@uniper.energy"
+  },
+  "type": "Microsoft.ContainerService/ManagedClusters",
+  "windowsProfile": null

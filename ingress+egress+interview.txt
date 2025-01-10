@@ -1,0 +1,39 @@
+Ingress:
+
+An API object that manages external access to the services in a cluster, typically HTTP.
+
+Ingress may provide load balancing, SSL termination and name-based virtual hosting.
+
+Egress:
+
+Kubernetes egress to describe connections being made from pods to anything outside of the cluster.
+
+TFS:
+CI/CD , bladelogic deployment , workitems , report and migration .
+
+Azure Devops:
+.net deployment , agent , environment group , service principle , service connection ,
+admin -->dashobard , assigning the task , license and permission 
+Basic 
+stakeholder
+Basic+testplan 
+project collective Admin - to see the history 
+creation of project
+plugin purge and installation 
+project settings 
+organisatoin settings 
+app service plan , app service 
+
+
+k8:
+HPA:
+load test 
+
+monitoring in k8:
+promethus
+Cadvisor
+kubelet
+k8 dashboard
+
+The DaemonSet feature is used to ensure that some or all of your pods are scheduled and running on every single available node.
+
