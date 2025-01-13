@@ -1,0 +1,514 @@
+Date: Wed, 9 Aug 2023 11:47:38 +0200 (CEST)
+Message-ID: <181726206.1998.1691574458189@cwikiprdapps001>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_1997_1431612699.1691574458188"
+
+------=_Part_1997_1431612699.1691574458188
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>AKS - Commands</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>AKS - Commands</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"rwui_text_box rwui_text_small  rwui_type_default  rwui_id_db1=
+95308-03a1-4c8b-894d-a0b5656bb64f ">
+<span class=3D"rwui_item_icon rw_external_icon_sms"></span><span class=3D"r=
+wui_content rwui_body rwui_has_icon"><h4 id=3D"AKSCommands-Listoffrequently=
+usedAKScommands">List of frequently used AKS commands</h4></span>
+<style>.rwui_text_box.rwui_id_db195308-03a1-4c8b-894d-a0b5656bb64f {backgro=
+und-color: #F2F2F2; color: #666666;}.rwui_text_box.rwui_id_db195308-03a1-4c=
+8b-894d-a0b5656bb64f *:not(.rwui_content) {color: #666666;}.rwui_text_box.r=
+wui_id_db195308-03a1-4c8b-894d-a0b5656bb64f span.rwui_icon {color: #666666;=
+}</style>
+</div>=20
+<div class=3D"panel" style=3D"border-color: grey;border-style: solid;border=
+-width: 1px;">
+<div class=3D"panelHeader" style=3D"border-bottom-width: 1px;border-bottom-=
+style: solid;border-bottom-color: grey;">
+<b>Table of content:</b>
+</div>
+<div class=3D"panelContent">=20
+<p></p>
+<p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1691574458145 {padding: 0px;}
+div.rbtoc1691574458145 ul {list-style: circle;margin-left: 0px;}
+div.rbtoc1691574458145 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1691574458145">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#AKSCommands-ListoffrequentlyusedAKScommands">List of freque=
+ntly used AKS commands</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#AKSCommands-CreateAKSCluster">Create AKS Cluster</a></li>=
+=20
+<li><a href=3D"#AKSCommands-DescribeCluster">Describe Cluster</a></li>=20
+<li><a href=3D"#AKSCommands-LoginintoAKSasadmin">Login into AKS as admin</a=
+></li>=20
+<li><a href=3D"#AKSCommands-BrowseDashboard">Browse Dashboard</a></li>=20
+<li><a href=3D"#AKSCommands-CreateTLSsecrets">Create TLS secrets</a></li>=
+=20
+<li><a href=3D"#AKSCommands-EnableLogAnalyticsonexistingAKSCluster">Enable =
+Log Analytics on existing AKS Cluster</a></li>=20
+<li><a href=3D"#AKSCommands-Disableexistingloganalyticsonakscluster">Disabl=
+e existing log analytics on aks cluster</a></li>=20
+<li><a href=3D"#AKSCommands-Cluster-infoandDashboard">Cluster-info and Dash=
+board</a></li>=20
+<li><a href=3D"#AKSCommands-Clusterissuers">Clusterissuers</a></li>=20
+<li><a href=3D"#AKSCommands-Describepodtogetcontainerid,node">Describe pod =
+to get container id, node</a></li>=20
+<li><a href=3D"#AKSCommands-Installsdkswithcurrentuserscope">Install sdks w=
+ith current user scope</a></li>=20
+<li><a href=3D"#AKSCommands-Kubernetesdashboardisnotopeningthenrunbelowcomm=
+and">Kubernetes dashboard is not opening then run below command</a></li>=20
+<li><a href=3D"#AKSCommands-Geteventlogs">Get event logs</a></li>=20
+<li><a href=3D"#AKSCommands-Couldnotlocateresourcegroupinworkspace-resource=
+-idURL">Could not locate resource group in workspace-resource-id URL</a></l=
+i>=20
+<li><a href=3D"#AKSCommands-ToResetDefaultRGfromCloudshell">To Reset Defaul=
+t RG from Cloudshell</a></li>=20
+<li><a href=3D"#AKSCommands-Usingperiscopetogetlogsfromcluster">Using peris=
+cope to get logs from cluster</a></li>=20
+<li><a href=3D"#AKSCommands-Howtocheckwhethercurrentserviceprincipalcouldac=
+cessACR">How to check whether current service principal could access ACR</a=
+></li>=20
+<li><a href=3D"#AKSCommands-ClusterwithPODslimitationandauotscaler">Cluster=
+ with PODs limitation and auotscaler</a></li>=20
+<li><a href=3D"#AKSCommands-Resetthekubeconfigcontext">Reset the kubeconfig=
+ context</a></li>=20
+<li><a href=3D"#AKSCommands-Deletingfilesfromcloudshellfileshare">Deleting =
+files from cloudshell fileshare</a></li>=20
+<li><a href=3D"#AKSCommands-Checktherolecreationpermission">Check the role =
+creation permission</a></li>=20
+<li><a href=3D"#AKSCommands-SeethesecretscontentinTLSsecrets">See the secre=
+ts content in TLS secrets</a></li>=20
+<li><a href=3D"#AKSCommands-DrainortakingouttheAKSnodesfrompool">Drain or t=
+aking out the AKS nodes from pool</a></li>=20
+<li><a href=3D"#AKSCommands-GetLUNidofattachedPVCtoaVMSSnode:">Get LUN id o=
+f attached PVC to a VMSS node:</a></li>=20
+<li><a href=3D"#AKSCommands-VersionofimagesrunningintheAKS:">Version of ima=
+ges running in the AKS:</a></li>=20
+<li><a href=3D"#AKSCommands-Seethechartsandversionhelmrepo">See the charts =
+and version helm repo</a></li>=20
+<li><a href=3D"#AKSCommands-SeethenodeCPU,Memoryrequestsandlimits">See the =
+node CPU, Memory requests and limits</a></li>=20
+<li><a href=3D"#AKSCommands-UsageofRequestsandLimitsforCPUandMemory">Usage =
+of Requests and Limits for CPU and Memory</a></li>=20
+<li><a href=3D"#AKSCommands-Setadeploymentsnginxcontainercpulimitsto&quot;2=
+00m&quot;andmemoryto&quot;512Mi&quot;">Set a deployments nginx container cp=
+u limits to "200m" and memory to "512Mi"</a></li>=20
+<li><a href=3D"#AKSCommands-Settheresourcerequestandlimitsforallcontainersi=
+nnginx">Set the resource request and limits for all containers in nginx</a>=
+</li>=20
+<li><a href=3D"#AKSCommands-Removetheresourcerequestsforresourcesoncontaine=
+rsinnginx">Remove the resource requests for resources on containers in ngin=
+x</a></li>=20
+<li><a href=3D"#AKSCommands-Printtheresult(inyamlformat)ofupdatingnginxcont=
+ainerlimitsfromalocal,withouthittingtheserver">Print the result (in yaml fo=
+rmat) of updating nginx container limits from a local, without hitting the =
+server</a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>
+<p></p>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h6 id=3D"AKSCommands-CreateAKSCluster">Create AKS Cluster</h6>
+<pre>az aks create --resource-group &lt;RG_Name&gt; --name &lt;RBAC_AKS_Clu=
+ster_Name&gt; --generate-ssh-keys --aad-server-app-id &lt;Server_AAD_APP_Cl=
+ientID&gt; --aad-server-app-secret &lt;Server_AAD_App_Client_Key&gt; --aad-=
+client-app-id &lt;Client_AAD_App_ClientID&gt; --aad-tenant-id &lt;TenantID&=
+gt; --location westeurope --generate-ssh-keys --service-principal &lt;Serve=
+r_AAD_APP_ClientID&gt; --client-secret &lt;Server_AAD_App_Client_Key&gt; --=
+node-count 1</pre>
+<h6 id=3D"AKSCommands-DescribeCluster">Describe Cluster</h6>
+<pre>kubectl cluster-info</pre>
+<h6 id=3D"AKSCommands-LoginintoAKSasadmin">Login into AKS as admin</h6>
+<pre>az aks get-credentials --resource-group &lt;RG_Name&gt; --name &lt;RBA=
+C_AKS_Cluster_Name&gt; --admin</pre>
+<h6 id=3D"AKSCommands-BrowseDashboard">Browse Dashboard</h6>
+<pre>az aks browse --resource-group &lt;RG_Name&gt; --name &lt;RBAC_AKS_Clu=
+ster_Name&gt;</pre>
+<h6 id=3D"AKSCommands-CreateTLSsecrets">Create TLS secrets</h6>
+<pre>kubectl create secret tls tls-secret --key cert.key --cert cert.crt -n=
+ ns1</pre>
+<h6 id=3D"AKSCommands-EnableLogAnalyticsonexistingAKSCluster">Enable Log An=
+alytics on existing AKS Cluster</h6>
+<pre>az aks enable-addons -a monitoring -n &lt;RBAC_AKS_Cluster_Name&gt; -g=
+ &lt;RG_Name&gt; --workspace-resource-id &lt;Full_resource_ID&gt;</pre>
+<pre>i.e. Full_resource_ID =3D "/subscriptions/3********6b899b7/resourceGro=
+ups/gi*****02/providers/Microsoft.OperationalInsights/workspaces/test-ak***=
+**-workspace"</pre>
+<h6 id=3D"AKSCommands-Disableexistingloganalyticsonakscluster">Disable exis=
+ting log analytics on aks cluster</h6>
+<pre>az aks disable-addons -a monitoring -n &lt;RBAC_AKS_Cluster_Name&gt; -=
+g &lt;RG_Name&gt;</pre>
+<h6 id=3D"AKSCommands-Cluster-infoandDashboard">Cluster-info and Dashboard<=
+/h6>
+<pre>Kubectl cluster-info</pre>
+<h6 id=3D"AKSCommands-Clusterissuers"><span>Clusterissuers</span></h6>
+<pre>kubectl get clusterissuers --all-namespaces</pre>
+<h6 id=3D"AKSCommands-Describepodtogetcontainerid,node"><span>Describe pod =
+to get container id, node</span></h6>
+<pre>kubectl describe pods &lt;pod_name&gt; -n &lt;namespace_name&gt;</pre>
+<h6 id=3D"AKSCommands-Installsdkswithcurrentuserscope"><span><span><span>In=
+stall sdks with current user scope</span></span></span></h6>
+<pre>Install-Module -name Az -AllowClobber -Force -Scope CurrentUser</pre>
+<h6 id=3D"AKSCommands-Kubernetesdashboardisnotopeningthenrunbelowcommand"><=
+span>Kubernetes dashboard is not opening then run below command</span></h6>
+<pre>kubectl create clusterrolebinding kubernetes-dashboard -n kube-system =
+--clusterrole=3Dcluster-admin --serviceaccount=3Dkube-system:kubernetes-das=
+hboard</pre>
+<h6 id=3D"AKSCommands-Geteventlogs">Get event logs</h6>
+<pre>kubectl get events -n monitoring</pre>
+<h6 id=3D"AKSCommands-Couldnotlocateresourcegroupinworkspace-resource-idURL=
+">Could not locate resource group in workspace-resource-id URL</h6>
+<pre>az aks list -o table</pre>
+<pre>az configure --defaults group=3D&lt;RG_Name&gt;&nbsp;</pre>
+<pre>az resource list</pre>
+<h6 id=3D"AKSCommands-ToResetDefaultRGfromCloudshell">To Reset Default RG f=
+rom Cloudshell</h6>
+<pre>az configure --defaults group=3D &lt;RG_Name&gt;</pre>
+<h6 id=3D"AKSCommands-Usingperiscopetogetlogsfromcluster">Using periscope t=
+o get logs from cluster</h6>
+<pre>az extension add --name aks-preview</pre>
+<pre>az aks kollect -g&nbsp;&lt;RG_Name&gt; -n &lt;RBAC_AKS_Cluster_Name&gt=
+; --storage-account &lt;Storage_Account_Name&gt;</pre>
+<h6 id=3D"AKSCommands-HowtocheckwhethercurrentserviceprincipalcouldaccessAC=
+R">How to check whether current service principal could access ACR</h6>
+<pre>az login --service-principal -u &lt;aadClientId&gt; -p &lt;aadClientSe=
+cret&gt; -t &lt;tenantId&gt;<br>az acr list</pre>
+<h6 id=3D"AKSCommands-ClusterwithPODslimitationandauotscaler">Cluster with =
+PODs limitation and auotscaler</h6>
+<pre>az aks create --resource-group ........--enable-cluster-autoscaler --m=
+in-count 1 --max-count 10</pre>
+<h6 id=3D"AKSCommands-Resetthekubeconfigcontext">Reset the kubeconfig conte=
+xt</h6>
+<pre>az aks get-credentials --resource-group &lt;RG_Name&gt; --name &lt;RBA=
+C_AKS_Cluster_Name&gt;&nbsp;--overwrite-existing</pre>
+<h6 id=3D"AKSCommands-Deletingfilesfromcloudshellfileshare">Deleting files =
+from cloudshell fileshare</h6>
+<pre>rm -rf filename&nbsp;</pre>
+<pre>rm -rf *</pre>
+<h6 id=3D"AKSCommands-Checktherolecreationpermission">Check the role creati=
+on permission</h6>
+<pre>kubectl auth can-i create roles -n &lt;namespace&gt;</pre>
+<h6 id=3D"AKSCommands-SeethesecretscontentinTLSsecrets">See the secrets con=
+tent in TLS secrets</h6>
+<pre>kubectl get secrets &lt;secretname&gt; -n &lt;namespace&gt; -o yaml</p=
+re>
+<h6 id=3D"AKSCommands-DrainortakingouttheAKSnodesfrompool">Drain or taking =
+out the AKS nodes from pool</h6>
+<pre>kubectl get nodes</pre>
+<pre>kubectl drain &lt;node name&gt;</pre>
+<p>restart the node directly from portal</p>
+<pre><code class=3D"language-shell">kubectl uncordon &lt;node name&gt;</cod=
+e></pre>
+<h6 class=3D"wp-block-code  language-bash" id=3D"AKSCommands-GetLUNidofatta=
+chedPVCtoaVMSSnode:"><code class=3D"  language-bash" lang=3D"bash">Get LUN =
+id of attached PVC to a VMSS node:</code></h6>
+<pre class=3D"wp-block-code  language-bash"><code class=3D"  language-bash"=
+ lang=3D"bash">az vmss show -g MC_RG_XXXXXXX_westeurope -n <span class=3D"t=
+oken string" style=3D"color: rgb(152,195,121);">"aks-agentpool-11111111-vms=
+s"</span> --instance-id <span class=3D"token number" style=3D"color: rgb(20=
+9,154,102);">0</span> --query <span class=3D"token string" style=3D"color: =
+rgb(152,195,121);">"storageProfile.dataDisks[].{name: name, lun: lun}"</spa=
+n></code></pre>
+<h6 id=3D"AKSCommands-VersionofimagesrunningintheAKS:">Version of images ru=
+nning in the AKS:</h6>
+<pre>helm list -a --all-namespaces</pre>
+<pre>NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ NAMESPACE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REVISION&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; UPDATED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ST=
+ATUS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHART&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; APP VERSION</pre>
+<pre>grafana&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; monitoring&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2020-03-06 01:13:06.494172712 +0000 U=
+TC deployed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; grafana-5.0.5&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.6.2</pre>
+<pre>prometheus1y&nbsp;&nbsp;&nbsp; prom1yns&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; 2020-03-24 12:34:22.348498359 +0000 UTC deployed&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; prometheus-11.0.3&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; 2.16.0</pre>
+<h6 id=3D"AKSCommands-Seethechartsandversionhelmrepo">See the charts and ve=
+rsion helm repo</h6>
+<pre>helm search repo</pre>
+<h6 id=3D"AKSCommands-SeethenodeCPU,Memoryrequestsandlimits"><span style=3D=
+"color: rgb(112,112,112);">See the node CPU, Memory requests and limits</sp=
+an></h6>
+<p><code class=3D"java plain">kubectl get nodes --no-headers | awk </code><=
+code class=3D"java string">'{print $1}'</code><span>&nbsp;</span><code clas=
+s=3D"java plain">| xargs -I {} sh -c </code><code class=3D"java string">'ec=
+ho {}; kubectl describe node {} | grep Allocated -A 5 | grep -ve Event -ve =
+Allocated -ve percent -ve -- ; echo'</code></p>
+<h6 id=3D"AKSCommands-UsageofRequestsandLimitsforCPUandMemory"><span style=
+=3D"color: rgb(128,128,128);">Usage of Requests and Limits for CPU and Memo=
+ry</span></h6>
+<pre>kubectl set resources --requests 'cpu=3D50m,memory=3D256Mi' --limits '=
+cpu=3D200m,memory=3D512Mi'</pre>
+<p>kubectl run limit-test --image=3Dbusybox -n secondary --requests 'cpu=3D=
+50m,memory=3D256Mi' --limits 'cpu=3D200m,memory=3D512Mi'</p>
+<h6 id=3D"AKSCommands-Setadeploymentsnginxcontainercpulimitsto&quot;200m&qu=
+ot;andmemoryto&quot;512Mi&quot;">Set a deployments nginx container cpu limi=
+ts to "200m" and memory to "512Mi"</h6>
+<pre>kubectl set resources deployment nginx -c=3Dnginx --limits=3Dcpu=3D200=
+m,memory=3D512Mi</pre>
+<h6 id=3D"AKSCommands-Settheresourcerequestandlimitsforallcontainersinnginx=
+">Set the resource request and limits for all containers in nginx</h6>
+<pre>kubectl set resources deployment nginx --limits=3Dcpu=3D200m,memory=3D=
+512Mi --requests=3Dcpu=3D100m,memory=3D256Mi</pre>
+<h6 id=3D"AKSCommands-Removetheresourcerequestsforresourcesoncontainersinng=
+inx">Remove the resource requests for resources on containers in nginx</h6>
+<pre>kubectl set resources deployment nginx --limits=3Dcpu=3D0,memory=3D0 -=
+-requests=3Dcpu=3D0,memory=3D0</pre>
+<h6 id=3D"AKSCommands-Printtheresult(inyamlformat)ofupdatingnginxcontainerl=
+imitsfromalocal,withouthittingtheserver">Print the result (in yaml format) =
+of updating nginx container limits from a local, without hitting the server=
+</h6>
+<pre>kubectl set resources -f path/to/file.yaml --limits=3Dcpu=3D200m,memor=
+y=3D512Mi --local -o yaml</pre>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_1997_1431612699.1691574458188--
