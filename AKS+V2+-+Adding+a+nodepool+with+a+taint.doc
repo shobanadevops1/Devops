@@ -1,0 +1,293 @@
+Date: Thu, 27 Jul 2023 09:00:10 +0200 (CEST)
+Message-ID: <1557694309.1.1690441210862@cwikiprdapps002>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_0_1346504528.1690441210848"
+
+------=_Part_0_1346504528.1690441210848
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>AKS V2 - Adding a nodepool with a taint</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>AKS V2 - Adding a nodepool with a taint</h1>
+    <div class=3D"Section1">
+        <p>In AKS V2 additional nodepools can be added upon customer reques=
+t. In general application teams should use the existing nodepools whenever =
+possible. However there might be cases when a workload needs specific VM pr=
+ofiles in order to run properly. In this case a nodepool can be added as fo=
+llows:</p>
+<p>az aks nodepool add&nbsp;--resource-group <strong>myResourceGroup</stron=
+g>&nbsp;--cluster-name <strong>myAKSCluster&nbsp;</strong>--name <strong>ta=
+intnp&nbsp;</strong>--node-count 1&nbsp;<span class=3D"hljs-parameter" styl=
+e=3D"color: rgb(0,0,0);">--node-vm-size</span><span style=3D"color: rgb(23,=
+23,23);"> Standard_NC6&nbsp;</span>--node-taints <strong>sku</strong>=3D<st=
+rong>gpu</strong>:NoSchedule&nbsp;--no-wait</p>
+<p>This command will create a nodepool&nbsp; with name taintnp with VM size=
+&nbsp;<span style=3D"color: rgb(23,23,23);">Standard_NC6 with taint sku=3Dg=
+pu. The taint parameter NoSchedule defines that only pods with the correspo=
+nding toleration sku=3Dgpu can be scheduled on this nodepool. This is the m=
+echanism to control that a specific pod will be scheduled only on the nodep=
+ool taintnp.</span></p>
+<p><span style=3D"color: rgb(23,23,23);">For further information about tain=
+ts and tolerations see:&nbsp;<a class=3D"external-link" href=3D"https://doc=
+s.microsoft.com/en-us/azure/aks/use-multiple-node-pools#schedule-pods-using=
+-taints-and-tolerations" rel=3D"nofollow">https://docs.microsoft.com/en-us/=
+azure/aks/use-multiple-node-pools#schedule-pods-using-taints-and-toleration=
+s</a></span></p>
+<p><span style=3D"color: rgb(23,23,23);">When adding a nodepool with a tain=
+t you need to pay specific attention to daemonsets since a pod instance of =
+a daemonsets will only be scheduled on a nodepool with a taint when configu=
+red correctly.</span></p>
+<p><span style=3D"color: rgb(23,23,23);">For the kured and kubecost daemons=
+et you need to add the matching tolerations so that pods of these daemonset=
+s will be scheduled.</span></p>
+<p><span style=3D"color: rgb(23,23,23);">kured</span></p>
+<p><span style=3D"color: rgb(23,23,23);">&nbsp;</span>helm upgrade kured ku=
+red/kured --set tolerations[0].effect=3DNoSchedule --set tolerations[0].key=
+=3Dsku --set tolerations[0].operator=3DEqual --set tolerations[0].value=3Dg=
+pu --namespace kured</p>
+<p>helm install kured kured/kured --namespace kured \<br>--set tolerations[=
+0].effect=3DNoSchedule --set tolerations[0].key=3D<a class=3D"external-link=
+" href=3D"http://node-role.kubernetes.io/agent" rel=3D"nofollow">node-role.=
+kubernetes.io/agent</a> \<br>--set tolerations[1].operator=3DExists --set t=
+olerations[1].key=3DCriticalAddonsOnly \<br>--set tolerations[2].operator=
+=3DExists --set tolerations[2].effect=3DNoExecute \<br>--set tolerations[3]=
+.operator=3DExists \<br>--set tolerations[3].effect=3DNoSchedule</p>
+<p>kubecost</p>
+<p>helm upgrade kubecost kubecost/cost-analyzer -n kubecost --set prometheu=
+s.nodeExporter.enabled=3Dtrue --set prometheus.nodeExporter.tolerations[0].=
+key=3Dsku,prometheus.nodeExporter.tolerations[0].value=3Dgpu,prometheus.nod=
+eExporter.tolerations[0].effect=3DNoSchedule,prometheus.nodeExporter.tolera=
+tions[0].operator=3DEqual</p>
+<p>Note that you can set several tolerations by increasing the array value =
+from 0 to 1 a.s.o.</p>
+<p><span style=3D"color: rgb(23,23,23);"><br></span></p>
+<p><span style=3D"color: rgb(23,23,23);"><br></span></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_0_1346504528.1690441210848--
