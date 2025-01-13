@@ -1,0 +1,17 @@
+{
+  "Name": "VnetjoinCustomRole",
+  "IsCustom": true,
+  "Description": "The Role allows to create or update Network Settings",
+  "Actions": [
+    "Microsoft.Network/virtualNetworks/subnets/read",
+    "Microsoft.Network/virtualNetworks/join/action"
+  ],
+  "NotActions": [
+    "Microsoft.Network/virtualNetworks/subnets/delete"
+  ],
+  "DataActions": [],
+  "NotDataActions": [],
+  "AssignableScopes": [
+    "/subscriptions/45d0ea8f-8477-4343-9256-9b7b12b1a567/resourcegroups/rg-weu-poc-eslz-02"
+  ]
+}
