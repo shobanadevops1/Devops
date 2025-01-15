@@ -1,0 +1,317 @@
+Date: Wed, 26 Jul 2023 13:51:04 +0200 (CEST)
+Message-ID: <3126643.7936.1690372264164@cwikiprdapps002>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_7935_533307293.1690372264164"
+
+------=_Part_7935_533307293.1690372264164
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Assign cluster role for user to create and manage SC and PV crea=
+tion</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Assign cluster role for user to create and manage SC and PV creatio=
+n</h1>
+    <div class=3D"Section1">
+        <p>By default HACT doesn't provide&nbsp; storage class and persiste=
+nt volume creation for app teams in AKS V2 shared clusters unless user expl=
+icitly requests.</p>
+<p>Steps to provide the access.</p>
+<p>Step1:&nbsp; Define&nbsp; cluster role to create and manage SC and PV.</=
+p>
+<blockquote>
+<p><span style=3D"color: rgb(61,201,176);">apiVersion</span><span style=3D"=
+color: rgb(212,212,212);">: </span><span style=3D"color: rgb(206,145,120);"=
+><a class=3D"external-link" href=3D"http://rbac.authorization.k8s.io/v1" re=
+l=3D"nofollow">rbac.authorization.k8s.io/v1</a></span><br><span style=3D"co=
+lor: rgb(61,201,176);">kind</span><span style=3D"color: rgb(212,212,212);">=
+: </span><span style=3D"color: rgb(206,145,120);">ClusterRole</span><br><sp=
+an style=3D"color: rgb(61,201,176);">metadata</span><span style=3D"color: r=
+gb(212,212,212);">:</span><br><span style=3D"color: rgb(61,201,176);">&nbsp=
+; annotations</span><span style=3D"color: rgb(212,212,212);">:</span><br><s=
+pan style=3D"color: rgb(61,201,176);">&nbsp; &nbsp;&nbsp;<a class=3D"extern=
+al-link" href=3D"http://rbac.authorization.kubernetes.io/autoupdate" rel=3D=
+"nofollow">rbac.authorization.kubernetes.io/autoupdate</a></span><span styl=
+e=3D"color: rgb(212,212,212);">: </span><span style=3D"color: rgb(206,145,1=
+20);">"true"</span><br><span style=3D"color: rgb(61,201,176);">&nbsp; label=
+s</span><span style=3D"color: rgb(212,212,212);">:</span><br><span style=3D=
+"color: rgb(61,201,176);">&nbsp; &nbsp;&nbsp;<a class=3D"external-link" hre=
+f=3D"http://kubernetes.io/bootstrapping" rel=3D"nofollow">kubernetes.io/boo=
+tstrapping</a></span><span style=3D"color: rgb(212,212,212);">: </span><spa=
+n style=3D"color: rgb(206,145,120);">rbac-defaults</span><br><span style=3D=
+"color: rgb(61,201,176);">&nbsp; name</span><span style=3D"color: rgb(61,20=
+1,176);"><span style=3D"color: rgb(212,212,212);">: &lt;clusterrolename&gt;=
+</span></span><br><span style=3D"color: rgb(61,201,176);">rules</span><span=
+ style=3D"color: rgb(212,212,212);">:</span><br><span style=3D"color: rgb(2=
+12,212,212);">- </span><span style=3D"color: rgb(61,201,176);">apiGroups</s=
+pan><span style=3D"color: rgb(212,212,212);">:</span><br><span style=3D"col=
+or: rgb(212,212,212);">&nbsp; - </span><span style=3D"color: rgb(206,145,12=
+0);">""</span><br><span style=3D"color: rgb(212,212,212);"> </span><span st=
+yle=3D"color: rgb(61,201,176);">resources</span><span style=3D"color: rgb(2=
+12,212,212);">:</span><br><span style=3D"color: rgb(212,212,212);"> - </spa=
+n><span style=3D"color: rgb(206,145,120);">'storageclasses'</span><br><span=
+ style=3D"color: rgb(212,212,212);"> - </span><span style=3D"color: rgb(206=
+,145,120);">'persistentvolumes'</span><br><span style=3D"color: rgb(212,212=
+,212);"> </span><span style=3D"color: rgb(61,201,176);">verbs</span><span s=
+tyle=3D"color: rgb(212,212,212);">:</span><br><span style=3D"color: rgb(212=
+,212,212);"> - </span><span style=3D"color: rgb(206,145,120);">'create'</sp=
+an><br><span style=3D"color: rgb(212,212,212);"> - </span><span style=3D"co=
+lor: rgb(206,145,120);">'get'</span><br><span style=3D"color: rgb(212,212,2=
+12);"> - </span><span style=3D"color: rgb(206,145,120);">'list'</span><br><=
+span style=3D"color: rgb(212,212,212);"> - </span><span style=3D"color: rgb=
+(206,145,120);">'update'</span></p>
+</blockquote>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Apply the above yaml using the command=
+.</p>
+<p><strong> kubectl apply -f &lt;filename&gt;.yaml</strong></p>
+<p>Step2: Create clusterrolebinding for respective serviceaccount and AD Gr=
+oup.</p>
+<blockquote>
+<p>Note: When users want to manage SC and PV through their azure devops pip=
+elines. HACT creates clusterrolebinding for service account(Azure Devops&nb=
+sp; automatically creates it when the service connection created).</p>
+</blockquote>
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kubectl create clusterrolebin=
+ding &lt;name&gt; --clusterrole=3D&lt;clusterrolename&gt; --serviceaccount=
+=3D&lt;namespacename&gt;:&lt;serviceaccountname&gt;</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Similarly create clusterrolebinding fo=
+r AD GroupID.&nbsp;</p>
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;kubectl create clusterrolebind=
+ing &lt;name&gt; --clusterrole=3Dcluster-admin --group=3D&lt;AD GroupID&gt;=
+</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Verify the clusterrolebinding using the belo=
+w command.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>kubectl&nbsp; describe cluster=
+rolebinding&nbsp; &lt;name&gt;</strong></p>
+<p>&nbsp;Output looks like below.</p>
+<blockquote>
+<p><strong>Name: sc-admin-sa<br>Labels: &lt;none&gt;<br>Annotations: &lt;no=
+ne&gt;<br>Role:<br>Kind: ClusterRole<br>Name: cluster-admin<br>Subjects:<br=
+>Kind Name Namespace<br>---- ---- ---------<br>Group 55a16f7a-c144-4d36-a9f=
+f-3540b32641d0</strong></p>
+</blockquote>
+    </div>
+</body>
+</html>
+------=_Part_7935_533307293.1690372264164--
