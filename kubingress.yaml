@@ -1,0 +1,36 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"Ingress","metadata":{"annotations":{"kubernetes.io/ingress.class":"nginx","nginx.ingress.kubernetes.io/proxy-body-size":"0","nginx.ingress.kubernetes.io/rewrite-target":"/$1","nginx.ingress.kubernetes.io/ssl-redirect":"false"},"creationTimestamp":"2022-08-05T15:11:48Z","generation":1,"name":"kubecost-ingress","namespace":"kubecost","resourceVersion":"291169471","uid":"df3948a2-d728-4b78-b7ee-3c321ca90d7d"},"spec":{"rules":[{"host":"kubecost-dev-hisec.azure.uniper.energy","http":{"paths":[{"backend":{"service":{"name":"kubecost-cost-analyzer","port":{"number":9090}}},"path":"/(.*)","pathType":"ImplementationSpecific"}]}}],"tls":[{"hosts":["kubecost-dev-hisec.azure.uniper.energy"],"secretName":"dev-certificate"}]},"status":{"loadBalancer":{"ingress":[{"ip":"10.55.27.21"}]}}}
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+  creationTimestamp: "2022-08-05T18:23:40Z"
+  generation: 1
+  name: kubecost-ingress
+  namespace: kubecost
+  resourceVersion: "291283827"
+  uid: cd6e28f1-3fce-4928-a461-35c99467acad
+spec:
+  rules:
+  - host: kubecost-dev-hisec.azure.uniper.energy
+    http:
+      paths:
+      - backend:
+          service:
+            name: kubecost-cost-analyzer
+            port:
+              number: 9090
+        path: /(.*)
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - kubecost-dev-hisec.azure.uniper.energy
+    secretName: dev-certificate
+status:
+  loadBalancer:
+    ingress:
+    - ip: 10.55.27.21

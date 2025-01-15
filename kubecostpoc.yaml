@@ -1,0 +1,97 @@
+apiVersion: v1
+items:
+- apiVersion: apps/v1
+  kind: DaemonSet
+  metadata:
+    annotations:
+      deprecated.daemonset.template.generation: "1"
+      meta.helm.sh/release-name: kubecost
+      meta.helm.sh/release-namespace: kubecost
+    creationTimestamp: "2022-10-27T14:55:33Z"
+    generation: 1
+    labels:
+      app: prometheus
+      app.kubernetes.io/managed-by: Helm
+      chart: prometheus-11.0.2
+      component: node-exporter
+      heritage: Helm
+      release: kubecost
+    name: kubecost-prometheus-node-exporter
+    namespace: kubecost
+    resourceVersion: "28815251"
+    uid: d3ea9e1f-51dc-4fbe-93f6-33aee1e47545
+  spec:
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        app: prometheus
+        component: node-exporter
+        release: kubecost
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: prometheus
+          chart: prometheus-11.0.2
+          component: node-exporter
+          heritage: Helm
+          release: kubecost
+      spec:
+        containers:
+        - args:
+          - --path.procfs=/host/proc
+          - --path.sysfs=/host/sys
+          - --web.listen-address=:9200
+          image: prom/node-exporter:v1.3.0
+          imagePullPolicy: IfNotPresent
+          name: prometheus-node-exporter
+          ports:
+          - containerPort: 9200
+            hostPort: 9200
+            name: metrics
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /host/proc
+            name: proc
+            readOnly: true
+          - mountPath: /host/sys
+            name: sys
+            readOnly: true
+        dnsPolicy: ClusterFirst
+        hostNetwork: true
+        hostPID: true
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        serviceAccount: kubecost-prometheus-node-exporter
+        serviceAccountName: kubecost-prometheus-node-exporter
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - hostPath:
+            path: /proc
+            type: ""
+          name: proc
+        - hostPath:
+            path: /sys
+            type: ""
+          name: sys
+    updateStrategy:
+      rollingUpdate:
+        maxSurge: 0
+        maxUnavailable: 1
+      type: RollingUpdate
+  status:
+    currentNumberScheduled: 4
+    desiredNumberScheduled: 4
+    numberAvailable: 1
+    numberMisscheduled: 0
+    numberReady: 1
+    numberUnavailable: 3
+    observedGeneration: 1
+    updatedNumberScheduled: 4
+kind: List
+metadata:
+  resourceVersion: ""

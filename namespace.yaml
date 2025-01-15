@@ -1,0 +1,140 @@
+# Commit all YAMLS required for creating namespaces, roles, rolebindings 'ADA_WindFC' in this single file.
+
+# Namespace Naming Convention(lowercase Only) : applicationname + iterationplanid + env + servicecomponent i.e. adawindfc-163752-dev
+
+# Remove the namespace prefix in the roles and role bindings
+
+
+## Namespace Admin
+# Use this for 'namespace admin' user access
+# This below lines of code creates Namespace, Role with Namespace Admin privileges & Role Bindings in a namespace.
+# Note: Deployments and Services is ADA_WindFC developers responsibilty
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  labels:
+    environment: #{environment}#
+    iteraplanid: '#{iteraplanID}#'
+    application_name: #{appname}#
+    owner_kid: #{ownerKID}#
+    contact_kid: #{ownerKID}#
+    
+  name: #{appname}#-#{iteraplanID}#-#{environment}#
+---
+# Creates a ResourceQuota 'requests-resourcequota' Specific to project namespace
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: requests-resourcequota
+  namespace: #{appname}#-#{iteraplanID}#-#{environment}#
+spec:
+  hard:
+    requests.cpu: #{request-cpu}# # metric - 'm' millicore, containers can get a single req with 500m or 50 requests with 10m 
+    requests.memory: #{request-memory}# # metrics - 'Mib' or 'Gib' total requested memory by container < 1GB
+    limits.cpu: #{limits-cpu}# # Maximum CPU which can be claimed by combined or single container
+    limits.memory: #{limits-memory}# # Maximum Memory which can be claimed by combined or single container
+---
+# Creates a Role 'namespace-admin' Specific to project namespace
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: namespace-admin
+  namespace: #{appname}#-#{iteraplanID}#-#{environment}# 
+rules:
+- apiGroups: ["extensions", "apps", "networking.k8s.io","metrics.k8s.io", "rbac.authorization.k8s.io", "autoscaling"]
+  resources: ["*"]
+  verbs: ["*"]
+- apiGroups: [""]
+  resources:
+  - bindings
+  - configmaps
+  - endpoints
+  - events
+  - limitranges
+  - persistentvolumeclaims
+  - persistentvolumes
+  - pods
+  - pods/log
+  - pods/attach
+  - pods/exec
+  - podtemplates
+  - replicationcontrollers
+  - secrets
+  - serviceaccounts
+  - services
+  verbs: ["*"]  
+- apiGroups: [""]
+  resources:
+  - resourcequotas
+  verbs: ["get", "list", "watch"]    
+- apiGroups: ["batch"]
+  resources:
+  - jobs
+  - cronjobs
+  verbs: ["*"]
+---
+# Below code creates 'namespace-admin-rbg' RoleBinding which attaches the AAD Group or users to a Role with Namespace admin priveleges. 
+# Note: Email IDs ust be in lowercase only.
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: namespace-admin
+  namespace: #{appname}#-#{iteraplanID}#-#{environment}#
+subjects:
+- kind: Group
+  name: #{groupid}# # group only
+roleRef:
+  kind: Role #this must be Role or ClusterRole
+  name: namespace-admin # must match the name of the Role
+  apiGroup: rbac.authorization.k8s.io
+---
+# Note: Role to access ingrss-controller namespace to reader ingress-controller logs
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: #{appname}#-#{iteraplanID}#-#{environment}#-reader
+  namespace: ingress-controller
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: ingress-reader-access
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: #{groupid}# # group only
+---
+# Note: Role to list all namespaces in the cluster
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: #{appname}#-#{iteraplanID}#-#{environment}#-reader
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: uniper-reader
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: #{groupid}# # group only
+---
+# Note: Network policy this will alllow communication within the namesapce and ingress controller
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-network-policy
+  namespace: #{appname}#-#{iteraplanID}#-#{environment}#
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - podSelector: {}
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: ingresscontroller 
