@@ -1,0 +1,78 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"rbac.authorization.k8s.io/v1","kind":"ClusterRole","metadata":{"annotations":{},"name":"uniper-reader"},"rules":[{"apiGroups":[""],"resources":["namespaces"],"verbs":["get","list"]},{"apiGroups":["","extensions","metrics.k8s.io"],"resources":["nodes","nodes/top"],"verbs":["get","list"]},{"apiGroups":["storage.k8s.io"],"resources":["storageclasses"],"verbs":["list","get","watch","create","update"]},{"apiGroups":[""],"resources":["persistentvolumes"],"verbs":["get","list","create","update","watch","delete","patch"]},{"apiGroups":["secrets-store.csi.x-k8s.io"],"resources":["secretproviderclasses"],"verbs":["get","list","update","create","delete"]},{"apiGroups":["secrets-store.csi.x-k8s.io"],"resources":["secretproviderclasses/status"],"verbs":["get","patch","update"]},{"apiGroups":[""],"resources":["secrets"],"verbs":["create","get","update","delete"]}]}
+  creationTimestamp: "2022-07-11T09:21:18Z"
+  name: uniper-reader
+  resourceVersion: "2606571"
+  uid: 423021d5-05a1-49ad-855e-d3bdcc24d5b4
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - namespaces
+  verbs:
+  - get
+  - list
+- apiGroups:
+  - ""
+  - extensions
+  - metrics.k8s.io
+  resources:
+  - nodes
+  - nodes/top
+  verbs:
+  - get
+  - list
+- apiGroups:
+  - storage.k8s.io
+  resources:
+  - storageclasses
+  verbs:
+  - list
+  - get
+  - watch
+  - create
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - persistentvolumes
+  verbs:
+  - get
+  - list
+  - create
+  - update
+  - watch
+  - delete
+  - patch
+- apiGroups:
+  - secrets-store.csi.x-k8s.io
+  resources:
+  - secretproviderclasses
+  verbs:
+  - get
+  - list
+  - update
+  - create
+  - delete
+- apiGroups:
+  - secrets-store.csi.x-k8s.io
+  resources:
+  - secretproviderclasses/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  verbs:
+  - create
+  - get
+  - update
+  - delete
+

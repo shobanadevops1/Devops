@@ -1,0 +1,18 @@
+Name:         uniper-reader
+Labels:       <none>
+Annotations:  <none>
+PolicyRule:
+  Resources                                                Non-Resource URLs  Resource Names  Verbs
+  ---------                                                -----------------  --------------  -----
+  secrets                                                  []                 []              [create get update delete]
+  persistentvolumes                                        []                 []              [get list create update watch delete patch]
+  secretproviderclasses.secrets-store.csi.x-k8s.io         []                 []              [get list update create delete]
+  namespaces                                               []                 []              [get list]
+  nodes/top                                                []                 []              [get list]
+  nodes                                                    []                 []              [get list]
+  nodes.extensions/top                                     []                 []              [get list]
+  nodes.extensions                                         []                 []              [get list]
+  nodes.metrics.k8s.io/top                                 []                 []              [get list]
+  nodes.metrics.k8s.io                                     []                 []              [get list]
+  secretproviderclasses.secrets-store.csi.x-k8s.io/status  []                 []              [get patch update]
+  storageclasses.storage.k8s.io                            []                 []              [list get watch create update]
