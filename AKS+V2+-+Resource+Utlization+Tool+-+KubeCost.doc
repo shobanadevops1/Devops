@@ -1,0 +1,345 @@
+Date: Wed, 26 Jul 2023 13:37:21 +0200 (CEST)
+Message-ID: <1371699324.7900.1690371441394@cwikiprdapps002>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_7899_110390765.1690371441393"
+
+------=_Part_7899_110390765.1690371441393
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>AKS V2 - Resource Utlization Tool - KubeCost</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>AKS V2 - Resource Utlization Tool - KubeCost</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"rwui_text_box rwui_text_small  rwui_type_default  rwui_id_26d=
+6f10b-86cd-4b43-a9e0-be993790f80c ">
+<span class=3D"rwui_item_icon rw_external_icon_sms"></span><span class=3D"r=
+wui_content rwui_body rwui_has_icon"><p><strong>Background:</strong></p><p>=
+This article describes on how to enable <a class=3D"external-link" href=3D"=
+https://kubecost.com/" rel=3D"nofollow">kubecost</a> on AKS cluster, which =
+can draft and report brief utilization of resources defined even underneath=
+ namespace of an AKS cluster.</p><p><em><span class=3D"confluence-embedded-=
+file-wrapper confluence-embedded-manual-size"><img class=3D"confluence-embe=
+dded-image confluence-external-resource" draggable=3D"false" alt=3D"Kubecos=
+t dashboard" width=3D"900" src=3D"https://kubecost.com/images/home.png" dat=
+a-image-src=3D"https://kubecost.com/images/home.png"></span></em></p></span=
+>
+<style>.rwui_text_box.rwui_id_26d6f10b-86cd-4b43-a9e0-be993790f80c {backgro=
+und-color: #F2F2F2; color: #666666;}.rwui_text_box.rwui_id_26d6f10b-86cd-4b=
+43-a9e0-be993790f80c *:not(.rwui_content) {color: #666666;}.rwui_text_box.r=
+wui_id_26d6f10b-86cd-4b43-a9e0-be993790f80c span.rwui_icon {color: #666666;=
+}</style>
+</div>=20
+<div class=3D"panel" style=3D"border-color: grey;border-style: solid;border=
+-width: 1px;">
+<div class=3D"panelHeader" style=3D"border-bottom-width: 1px;border-bottom-=
+style: solid;border-bottom-color: grey;">
+<b>Table of content:</b>
+</div>
+<div class=3D"panelContent">=20
+<p></p>
+<p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1690371441364 {padding: 0px;}
+div.rbtoc1690371441364 ul {list-style: circle;margin-left: 0px;}
+div.rbtoc1690371441364 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1690371441364">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#AKSV2ResourceUtlizationToolKubeCost-InstallingKubecostonaAK=
+Scluster">Installing Kubecost on a AKS cluster</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#AKSV2ResourceUtlizationToolKubeCost-InstallKubecost">Instal=
+l Kubecost</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#AKSV2ResourceUtlizationToolKubeCost-UpdatingKubecostinstall=
+edonaAKScluster">Updating Kubecost installed on a AKS cluster</a></li>=20
+<li><a href=3D"#AKSV2ResourceUtlizationToolKubeCost-DeletingKubecostfromaAK=
+Scluster">Deleting Kubecost from a AKS cluster</a></li>=20
+</ul>=20
+</div>
+<p></p>=20
+</div>
+</div>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<h3 id=3D"AKSV2ResourceUtlizationToolKubeCost-InstallingKubecostonaAKSclust=
+er"><span style=3D"color: rgb(85,85,85);">Installing Kubecost on a AKS clus=
+ter</span>&nbsp;</h3>
+<h4 id=3D"AKSV2ResourceUtlizationToolKubeCost-InstallKubecost">Install Kube=
+cost</h4>
+<p>Run the following commands after login into AKS cluster, below commands =
+would create separate namespace i.e. kubecost and using Helm 3 it fetches k=
+ubecost code and installs inside the namespace.</p>
+<p><strong>Note:</strong> This tutorial uses HELM 3 in case for your POC yo=
+u want to use HELM 2 follow this <a class=3D"external-link" href=3D"https:/=
+/kubecost.com/install?ref=3Dpricing" rel=3D"nofollow">link</a>. In case the=
+ below token does not work go to this&nbsp;<a class=3D"external-link" href=
+=3D"https://kubecost.com/install?ref=3Dpricing" rel=3D"nofollow">link</a> f=
+or updated info.<span style=3D"color: rgb(51,51,51);"> If you receive a mes=
+sage stating the installation is "forbidden" then see the instructions abov=
+e on granting RBAC permissions.</span></p>
+<blockquote>
+<pre>kubectl create namespace kubecost<br>helm repo add kubecost <a class=
+=3D"external-link" href=3D"https://kubecost.github.io/cost-analyzer/" rel=
+=3D"nofollow">https://kubecost.github.io/cost-analyzer/</a><br>helm install=
+ kubecost kubecost/cost-analyzer --namespace kubecost --set kubecostToken=
+=3D"Z2lyaXNoLmthbGFtYXRpQHVuaXBlci5lbmVyZ3k=3Dxm343yadf98"</pre>
+</blockquote>
+<h3 id=3D"AKSV2ResourceUtlizationToolKubeCost-UpdatingKubecostinstalledonaA=
+KScluster"><span style=3D"color: rgb(85,85,85);">Updating Kubecost installe=
+d on a AKS cluster</span></h3>
+<p><span style=3D"color: rgb(85,85,85);">If you have kubecost installed ins=
+ide your AKS cluster you can update it by updating helm. Y<span style=3D"co=
+lor: rgb(85,85,85);">ou can update with the following commands:</span></spa=
+n></p>
+<blockquote>
+<pre>helm repo update &amp;&amp; helm upgrade kubecost kubecost/cost-analyz=
+er -n kubecost</pre>
+</blockquote>
+<h3 id=3D"AKSV2ResourceUtlizationToolKubeCost-DeletingKubecostfromaAKSclust=
+er"><span style=3D"color: rgb(85,85,85);">Deleting Kubecost from a AKS clus=
+ter</span></h3>
+<p><span style=3D"color: rgb(85,85,85);"><span style=3D"color: rgb(85,85,85=
+);">To uninstall Kubecost and it's dependancies, run the following command:=
+</span></span></p>
+<blockquote>
+<pre>helm uninstall kubecost -n kubecost</pre>
+</blockquote>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_7899_110390765.1690371441393--
