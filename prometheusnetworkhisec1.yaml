@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"default-network-policy","namespace":"usipuk-200490-test"},"spec":{"ingress":[{"from":[{"podSelector":{}}]},{"from":[{"namespaceSelector":{"matchLabels":{"name":"ingresscontroller"}}}]}],"podSelector":{},"policyTypes":["Ingress","Egress"]}}
+  creationTimestamp: "2022-01-21T13:15:36Z"
+  generation: 2
+  name: default-network-policy
+  namespace: monitoring
+  resourceVersion: "215546705"
+  uid: 7433c370-f092-4853-9c32-82d72be664a5
+spec:
+  ingress:
+  - from:
+    - podSelector: {}
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: ingresscontroller
+  podSelector: {}
+  policyTypes:
+  - Ingress

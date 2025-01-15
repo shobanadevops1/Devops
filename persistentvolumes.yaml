@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: autotradeentry-pv
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: azurefile
+  csi:
+    driver: file.csi.azure.com
+    readOnly: false
+    volumeHandle: nordpoolaucvol
+    volumeAttributes:
+      resourceGroup: atrd-paas-dev-rgp-001
+      shareName: ate-fileshare
+    nodeStageSecretRef:
+      name: ate-fileshare-secret
+      namespace: ate-201-dev
+  mountOptions:
+    - dir_mode=0777
+    - file_mode=0777
+    - uid=0
+    - gid=0
+    - mfsymlinks
+    - cache=strict
+    - nosharesock
+    - nobrl
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: autotradeentry-pvc
+  namespace: ate-201-dev
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: azurefile
+  volumeName: autotradeentry-pv
+  resources:
+    requests:
+      storage: 5Gi
