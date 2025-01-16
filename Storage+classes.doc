@@ -1,0 +1,356 @@
+Date: Wed, 26 Jul 2023 13:47:47 +0200 (CEST)
+Message-ID: <729973810.7934.1690372067246@cwikiprdapps002>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_7933_1136401615.1690372067246"
+
+------=_Part_7933_1136401615.1690372067246
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Storage classes</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Storage classes</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><span style=3D"color: rgb(0,0,0);">When none of the static PVs the <a hr=
+ef=3D"https://wiki.intranet.uniper.energy/sales/pages/viewpage.action?pageI=
+d=3D45089074" rel=3D"nofollow">HaCT</a>&nbsp;admin created match a user's P=
+ersistentVolumeClaim, the cluster may try to dynamically provision a volume=
+ specially for the PVC. This provisioning is based on StorageClasses:</span=
+></p>
+<p>We have different tiers of stoarge.</p>
+<ul style=3D"list-style-type: square;">
+<li><span style=3D"color: rgb(23,23,23);">Premium</span></li>
+<li><span style=3D"color: rgb(23,23,23);">Standard</span><br><span style=3D=
+"color: rgb(23,23,23);">&nbsp;you can also create a&nbsp;</span><em>Storage=
+Class on your own</em><span style=3D"color: rgb(23,23,23);">. It</span><spa=
+n style=3D"color: rgb(23,23,23);">&nbsp;defines the&nbsp;</span><em>reclaim=
+Policy</em><span style=3D"color: rgb(23,23,23);">. </span><br><span style=
+=3D"color: rgb(23,23,23);"><span style=3D"color: rgb(0,0,0);">reclaim polic=
+ies are -&nbsp; "Retain", "Recycle", and "Delete"</span></span></li>
+</ul>
+<p><span style=3D"color: rgb(23,23,23);">This reclaimPolicy controls the be=
+havior of the&nbsp;<span style=3D"color: rgb(23,23,23);">underlying Azure s=
+torage resource when the pod is deleted and the persistent volume may no lo=
+nger be required. The underlying storage resource can be deleted, or retain=
+ed for use with a future pod.</span></span></p>
+<p><span style=3D"color: rgb(23,23,23);"><span style=3D"color: rgb(23,23,23=
+);">In&nbsp;<a href=3D"https://wiki.intranet.uniper.energy/sales/pages/view=
+page.action?pageId=3D45089074" rel=3D"nofollow">HaCT</a><span>&nbsp;</span>=
+ managed containers, 4 initial StorageClasses are created:</span></span></p=
+>
+<ul>
+<li><strong>default&nbsp;</strong>- Uses Azure StandardSSD storage to creat=
+e a Managed Disk. The reclaim policy indicates that the underlying Azure Di=
+sk is deleted when the persistent volume that used it is deleted.</li>
+<li><strong>managed-premium</strong>&nbsp;- Uses Azure Premium storage to c=
+reate Managed Disk. The reclaim policy again indicates that the underlying =
+Azure Disk is deleted when the persistent volume that used it is deleted.</=
+li>
+<li><strong>azurefile&nbsp;</strong>- Uses Azure Standard storage to create=
+ an Azure File Share. The reclaim policy indicates that the underlying Azur=
+e File Share is deleted when the persistent volume that used it is deleted.=
+</li>
+<li><strong>azurefile-premium</strong>&nbsp;- Uses Azure Premium storage to=
+ create an Azure File Share. The reclaim policy indicates that the underlyi=
+ng Azure File Share is deleted when the persistent volume that used it is d=
+eleted.</li>
+</ul>
+<p><span style=3D"color: rgb(23,23,23);"><span style=3D"color: rgb(23,23,23=
+);">when no storage class is specified for a persistent volume, the default=
+ stoarge class will be used, so that you need to ensure the appropriate sto=
+rage for persistent volumes.</span></span></p>
+<p><span style=3D"color: rgb(23,23,23);"><span style=3D"color: rgb(23,23,23=
+);">you can create a storage class using <strong>kubectl</strong></span></s=
+pan></p>
+<p><span style=3D"color: rgb(23,23,23);"><span style=3D"color: rgb(23,23,23=
+);">The below one is example for premium managed disks that specifies the u=
+nderlying Azure Disk should continue to hold(retained) when the pod is dele=
+ted.</span></span></p>
+<blockquote>
+<p>kind: StorageClass<br>apiVersion: <a class=3D"external-link" href=3D"htt=
+p://storage.k8s.io/v1" rel=3D"nofollow">storage.k8s.io/v1</a><br>metadata:<=
+br>&nbsp; &nbsp; name: managed-premium-retain<br>provisioner: <a class=3D"e=
+xternal-link" href=3D"http://kubernetes.io/azure-disk" rel=3D"nofollow">kub=
+ernetes.io/azure-disk</a><br>reclaimPolicy: Retain<br>parameters:<br>&nbsp;=
+ &nbsp; &nbsp;storageaccounttype: Premium_LRS<br>&nbsp; &nbsp; &nbsp;kind: =
+Managed</p>
+</blockquote>
+<p><strong><span style=3D"color: rgb(23,23,23);">create and use a persisten=
+t volume with Azure Files:</span></strong></p>
+<p><span style=3D"color: rgb(23,23,23);">A storage class is used to define =
+how an Azure file share is created.&nbsp;<span style=3D"color: rgb(23,23,23=
+);">A storage account is created in the resource group</span><span style=3D=
+"color: rgb(23,23,23);">&nbsp;for use with the storage class to hold the Az=
+ure file shares.</span></span></p>
+<p><span style=3D"color: rgb(23,23,23);">below one is an example for Azure =
+file storage class</span></p>
+<p><span style=3D"color: rgb(23,23,23);"><span style=3D"color: rgb(23,23,23=
+);">you can name the file : azure-file-sc.yaml</span></span></p>
+<blockquote>
+<p>kind: StorageClass</p>
+<p>apiVersion: storage.k8s.io/v1</p>
+<p>metadata:</p>
+<p>&nbsp; &nbsp; &nbsp;name: azurefile</p>
+<p>provisioner: kubernetes.io/azure-file</p>
+<p>mountoptions:</p>
+<p>&nbsp; &nbsp; &nbsp;- dir_mode=3D0777</p>
+<p>&nbsp; &nbsp; &nbsp;- file_mode=3D0777</p>
+<p>&nbsp; &nbsp; &nbsp;- uid=3D0</p>
+<p>&nbsp; &nbsp; &nbsp;- gid=3D0</p>
+<p>&nbsp; &nbsp; &nbsp;- mfsymlinks</p>
+<p>&nbsp; &nbsp; &nbsp;- cache=3Dstrict</p>
+<p>parameters:</p>
+<p>&nbsp; &nbsp; skuName: Standard_LRS</p>
+</blockquote>
+<p><span style=3D"color: rgb(23,23,23);">the below command creates the stor=
+age class</span></p>
+<p><span style=3D"color: rgb(23,23,23);"><strong>kubectl apply -f azure-fil=
+e-sc.yaml</strong>&nbsp;</span></p>
+<p><span style=3D"color: rgb(23,23,23);">For more info on Azure files -&nbs=
+p;</span><a class=3D"external-link" href=3D"https://kubernetes.io/docs/conc=
+epts/storage/storage-classes/#azure-file" rel=3D"nofollow">https://kubernet=
+es.io/docs/concepts/storage/storage-classes/#azure-file</a></p>
+<p><span style=3D"color: rgb(23,23,23);">refer to the url for storage class=
+es:&nbsp;<a class=3D"external-link" href=3D"https://kubernetes.io/docs/conc=
+epts/storage/storage-classes/" rel=3D"nofollow">https://kubernetes.io/docs/=
+concepts/storage/storage-classes/</a></span></p>
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p>&nbsp;</p>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_7933_1136401615.1690372067246--
