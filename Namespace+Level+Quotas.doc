@@ -1,0 +1,333 @@
+Date: Wed, 26 Jul 2023 13:45:19 +0200 (CEST)
+Message-ID: <1298392468.7922.1690371919426@cwikiprdapps002>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_7921_297705719.1690371919425"
+
+------=_Part_7921_297705719.1690371919425
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Namespace Level Quotas</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Namespace Level Quotas</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<div class=3D"rwui_text_box rwui_text_small  rwui_type_default  rwui_id_32f=
+e4fd8-a946-4212-be90-e0f0b2b69cbb ">
+<span class=3D"rwui_item_icon rw_external_icon_sms"></span><span class=3D"r=
+wui_content rwui_body rwui_has_icon"><p><strong>Background:</strong></p><p>=
+<span style=3D"color: rgb(84,84,84);">A namespace resource quota, defined b=
+y a&nbsp;</span><code>ResourceQuota</code><span style=3D"color: rgb(84,84,8=
+4);">&nbsp;object, provides constraints that limit aggregate resource consu=
+mption per namespace. It can limit the amount of compute resources that may=
+ be consumed by resources in that namespace. ResourceQuota can be applied a=
+t various levels in a AKS.</span></p></span>
+<style>.rwui_text_box.rwui_id_32fe4fd8-a946-4212-be90-e0f0b2b69cbb {backgro=
+und-color: #F2F2F2; color: #666666;}.rwui_text_box.rwui_id_32fe4fd8-a946-42=
+12-be90-e0f0b2b69cbb *:not(.rwui_content) {color: #666666;}.rwui_text_box.r=
+wui_id_32fe4fd8-a946-4212-be90-e0f0b2b69cbb span.rwui_icon {color: #666666;=
+}</style>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div class=3D"columnLayout single" data-layout=3D"single">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p>CMC managed containers are allotted with ResourceQuota at Namespace Leve=
+l while provisioning. If namespace admin want to modify/update the Quota, a=
+ simple cmc orders request to&nbsp;<a class=3D"external-link" href=3D"mailt=
+o:uit-cmc-development-service@uniper.energy" rel=3D"nofollow">UIT CMC Devel=
+opment Services</a>&nbsp;can be placed.</p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<div>
+<span style=3D"color: rgb(86,156,214);">apiVersion</span>:&nbsp;<span style=
+=3D"color: rgb(206,145,120);">v1</span>
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">kind</span>:&nbsp;<span style=3D"co=
+lor: rgb(206,145,120);">ResourceQuota</span>
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">metadata</span>:
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">name</span>:&nbsp;<span style=3D"co=
+lor: rgb(206,145,120);">requests-resourcequota</span>
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">namespace</span>:&nbsp;<span style=
+=3D"color: rgb(206,145,120);">namespace_name</span>
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">spec</span>:
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">hard</span>:
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">requests.cpu</span>:&nbsp;<span sty=
+le=3D"color: rgb(206,145,120);">"2"</span>&nbsp;<span style=3D"color: rgb(1=
+06,153,85);">#&nbsp;metric&nbsp;-&nbsp;'m'&nbsp;millicore,&nbsp;containers&=
+nbsp;can&nbsp;get&nbsp;a&nbsp;single&nbsp;req&nbsp;with&nbsp;500m&nbsp;or&n=
+bsp;50&nbsp;requests&nbsp;with&nbsp;10m&nbsp;</span>
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">requests.memory</span>:&nbsp;<span =
+style=3D"color: rgb(206,145,120);">8Gi</span>&nbsp;<span style=3D"color: rg=
+b(106,153,85);">#&nbsp;metrics&nbsp;-&nbsp;'Mib'&nbsp;or&nbsp;'Gib'&nbsp;to=
+tal&nbsp;requested&nbsp;memory&nbsp;by&nbsp;container&nbsp;&lt;&nbsp;1GB</s=
+pan>
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">limits.cpu</span>:&nbsp;<span style=
+=3D"color: rgb(206,145,120);">"2"</span>&nbsp;<span style=3D"color: rgb(106=
+,153,85);">#&nbsp;Maximum&nbsp;CPU&nbsp;which&nbsp;can&nbsp;be&nbsp;claimed=
+&nbsp;by&nbsp;combined&nbsp;or&nbsp;single&nbsp;container</span>
+</div>
+<div>
+<span style=3D"color: rgb(86,156,214);">limits.memory</span>:&nbsp;<span st=
+yle=3D"color: rgb(206,145,120);">8Gi</span>&nbsp;<span style=3D"color: rgb(=
+106,153,85);">#&nbsp;Maximum&nbsp;Memory&nbsp;which&nbsp;can&nbsp;be&nbsp;c=
+laimed&nbsp;by&nbsp;combined&nbsp;or&nbsp;single&nbsp;container</span>
+</div></th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_7921_297705719.1690371919425--
